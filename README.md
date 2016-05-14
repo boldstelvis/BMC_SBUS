@@ -25,24 +25,30 @@ you should then be able to include BMC_SBUS in your sketches
 
 to create a new instance:
 
-`#include <BMC_SBUS.h>
-BMC_SBUS mySBUS;`
+`#include <BMC_SBUS.h>`
+
+`BMC_SBUS mySBUS;`
 
 then make sure you initialise this in the setup function of your sketch:
 
-`void setup() {
-  mySBUS.begin(); 
-}`
+`void setup() {`
+
+`  mySBUS.begin();`
+
+`}`
 
 the class has 3 methods:
 
 `void mysbus.Servo(uint8_t ch, int16_t position)`
+
 will set one of 16 channels to the given position value (valid position values are 0 to 2047)
 
 `void mysbus.Update(void);`
+
 will format all 16 servo channels into a valid sbus data frame
 
 `void mysbus.Send(void);`
+
 will send the currently defined frame out over the serial port
 
 the serial port to use is defined in the header file and defaults to the standard Serial
