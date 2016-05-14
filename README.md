@@ -25,17 +25,18 @@ you should then be able to include BMC_SBUS in your sketches
 
 to create a new instance:
 
-`#include <BMC_SBUS.h>`
-
-`BMC_SBUS mySBUS;`
+```
+#include <BMC_SBUS.h>
+BMC_SBUS mySBUS;
+```
 
 then make sure you initialise this in the setup function of your sketch:
 
-`void setup() {`
-
-`  mySBUS.begin();`
-
-`}`
+```
+void setup() {
+  mySBUS.begin();`
+}
+```
 
 the class has 3 methods:
 
