@@ -44,11 +44,11 @@ the class has 3 methods:
 
 will set one of 16 channels to the given position value (valid position values are 0 to 2047)
 
-`void mysbus.Update(void);`
+`void mysbus.Update(void)`
 
 will format all 16 servo channels into a valid sbus data frame
 
-`void mysbus.Send(void);`
+`void mysbus.Send(void)`
 
 will send the currently defined frame out over the serial port
 
