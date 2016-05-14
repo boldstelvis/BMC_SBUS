@@ -1,24 +1,24 @@
 # BMC_SBUS
 
-BMC_SBUS version 0.1.0 May 14th 2016 Stu Aitken
+BMC_SBUS version 0.1.0 
+May 14th 2016 
+Stu Aitken
 
 A simplified library for writing out serial servo data in Futaba SBUS format on the Arduino platform
 
-explictly written to control Blackmagic Design micro cameras, but shoud work generally
+explictly written to control Blackmagic Design micro cameras, but should work generally
 
-note for RC use various important flags such as failsafe have been omitted here
-please refer to original source Libray in this case
+note for RC use various important flags such as failsafe have been omitted here. Please refer to original source Libray in this case.
 
-based on FUTABA_SBUS library written by Michael Baker 
-see: https://github.com/mikeshub/FUTABA_SBUS
-also see : http://forum.arduino.cc/index.php/topic,99708.0.html
+based on FUTABA_SBUS library written by Michael Baker - see: https://github.com/mikeshub/FUTABA_SBUS
+also see: http://forum.arduino.cc/index.php/topic,99708.0.html
 
 initial reverse engineering of sbus protocol by Uwe Gartmann 
 see: https://developer.mbed.org/users/Digixx/notebook/futaba-s-bus-controlled-by-mbed/
 
-SBUS ©FUTABA CORPORATION 2016. 
+SBUS ©FUTABA CORPORATION 
 
-this simplified library is based on the original work by Michael Baker but simplified to provide straightforward methods to write channel data to the camera
+this library is based on the original work linked to above but simplified to provide straightforward methods to write channel data to the camera
 
 to use, copy the BMC_SBUS folder to the the library folder for your Arduino installation and then restart the IDE
 you should then be able to include BMC_SBUS in your sketches
