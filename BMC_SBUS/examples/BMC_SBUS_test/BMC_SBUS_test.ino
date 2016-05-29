@@ -10,19 +10,27 @@ UP and DOWN buttons change 'switched' values (channels 5 to 8)
 
 Channel setup per mode - map BMMCC camera functions to sbus channels as below
 
-MODE 1 - ch01: Focus    ch05: REC
-MODE 2 - ch02: Iris     ch06: Shutter
-MODE 3 - ch03: Zoom     ch07: ISO
-MODE 4 - ch04: Levels   ch08: WB
+MODE 1
+ch01: Focus   (controlled by pot)
+ch05: REC     (controlled by up/down buttons)
+MODE 2
+ch02: Iris    (controlled by pot)
+ch06: Shutter (controlled by up/down buttons)
+MODE 3
+ch03: Zoom    (controlled by pot)
+ch07: ISO     (controlled by up/down buttons)
+MODE 4
+ch04: Levels  (controlled by pot)
+ch08: WB      (controlled by up/down buttons)
 */
 
 //set initial mode 
 byte mode                 = 1;
 
 //set IO pins
-const byte pinMODE        = 6; 
-const byte pinUP          = 5;
-const byte pinDOWN        = 4;
+const byte pinMODE        = 10; 
+const byte pinUP          = 11;
+const byte pinDOWN        = 12;
 const byte pinPOT         = 1; //analog pin!
 const byte pinLED         = 13;
 
