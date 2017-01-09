@@ -57,3 +57,13 @@ you can change that to Serial1 or whatever if you have a board with more than 1 
 
 the library and example sketches are heavily commented so please take a look there for more info
 
+NOTE: if you are using an arduino board with more than one HW serial bus you may need to change this line in the header file of the library:
+
+#define SERIALPORT Serial
+
+to:
+
+#define SERIALPORT Serial1
+
+
+
