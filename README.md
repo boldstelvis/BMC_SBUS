@@ -59,11 +59,11 @@ the library and example sketches are heavily commented so please take a look the
 
 NOTE: if you are using an arduino board with more than one HW serial bus you may need to change this line in the header file of the library:
 
-'#define SERIALPORT Serial'
+`#define SERIALPORT Serial`
 
 to:
 
-'#define SERIALPORT Serial1'
+`#define SERIALPORT Serial1`
 
 
 
